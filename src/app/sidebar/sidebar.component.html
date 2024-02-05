@@ -1,0 +1,23 @@
+<div class="container back-image">
+    <div class="row ">
+        <div class="col-sm-12 col-md-12 col-2 p-0">
+            <app-user-photo></app-user-photo>
+        </div>
+        <div class="p-0">
+            <div class="school_name">
+                <h6>{{rootService.current_school}}<br/> <span style="font-size: 10px;">Public School</span></h6>
+                <p class="school_stat">Grade: {{rootService.current_grade}}</p>
+            </div>
+            <div class="horizontal-line"></div>
+            <div class="sidebar mt-3" style="padding-left: 5px;">
+                <ul class="list-group custom-list-group">
+                    <li class="list-group-item"><a routerLink="dashboard"><i class="fas fa-dashboard"></i>Dashboard</a></li>
+                    <li class="list-group-item"><a routerLink="articles"><i class="fas fa-edit"></i>Articles</a></li>
+                    <li class="list-group-item"><a routerLink="arts"><i class="fas fa-paint-brush"></i>Arts</a></li>
+                    <li class="list-group-item"><a routerLink="photography"><i class="fas fa-camera"></i>Photography</a></li>
+                    <li class="list-group-item"><a routerLink="gallery"><i class="fas fa-film"></i>Gallery</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

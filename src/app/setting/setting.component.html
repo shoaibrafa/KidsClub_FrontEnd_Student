@@ -1,0 +1,41 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4">
+            <div class="row" style="display: flex; justify-content: center;">
+                <img class="rounded-circle photo clickable" src="../../../../assets/images/photos/profile_img.png" style="width: 200px;" (click)="img_edit()"/>
+            </div>
+            <div class="row mt-3 mb-3">
+                <div class="col-6"><h6>Full Name: <span class="bold"> {{ service.name + ' ' + service.lastname }}</span></h6></div>
+                <div class="col-6"><button class="btn btn-sm btn-success" style="float: right;">Edit</button></div>
+            </div>
+            <div class="horizontal-line"></div>
+            <div class="row mt-3 mb-3">
+                <div class="col-6"><h6>Date of Birth: <span class="bold">{{ service.birth_date }}</span></h6></div>
+                <div class="col-6"><button class="btn btn-sm btn-success" style="float: right;">Edit</button></div>
+            </div>
+            <div class="horizontal-line"></div>
+            <div class="row mt-3 mb-3">
+                <div class="col-6"><h6>Email: <span class="bold">{{ service.email }}</span></h6></div>
+                <div class="col-6"><button class="btn btn-sm btn-success" style="float: right;">Edit</button></div>
+            </div>
+            <div class="horizontal-line"></div>
+            <div class="row mt-3 mb-3">
+                <div class="col-6"><h6>Phone: <span class="bold">{{ service.phone }}</span></h6></div>
+                <div class="col-6"><button class="btn btn-sm btn-success" style="float: right;">Edit</button></div>
+            </div>
+            <div class="horizontal-line"></div>
+            <div class="row mt-3 mb-3">
+                <div class="col-6"><h6>Current School: <span class="bold">{{ service.current_school }}</span></h6></div>
+                <div class="col-6"><button class="btn btn-sm btn-success" style="float: right;">Edit</button></div>
+            </div>
+            <div class="horizontal-line"></div>
+            <div class="row mt-3 mb-3">
+                <div class="col-6"><h6>Address: <span>{{ service.address }}</span></h6></div>
+                <div class="col-6"><button class="btn btn-sm btn-success" style="float: right;">Edit</button></div>
+            </div>
+
+        </div>
+        <div class="col-lg-4"></div>
+    </div>
+</div>

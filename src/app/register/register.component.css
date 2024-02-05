@@ -1,0 +1,59 @@
+.back-color{
+    background-color: #214162;
+    height: 100vh;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .login-card {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+.btn {
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #214162;
+    color: #d5e2ff; 
+    border-radius: 0; 
+    padding: 10px 20px;
+    border: 0;
+}
+
+a{
+  font-size: 12px;
+  text-decoration: none;
+  color: #214162;
+}
+
+.reg_success {
+  font-size: 12px;
+  text-decoration: none;
+  color: #068a18;
+}
+
+.reg_error {
+  font-size: 12px;
+  text-decoration: none;
+  color: #cc0707;
+}
+
+.label{
+  font-size: 14px;
+  color: #214162;
+  font-weight: bold;
+}
+
+h2{
+  color: #214162;;
+}
+
+input{
+  height: 35px;
+  border-radius: 0;
+}

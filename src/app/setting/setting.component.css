@@ -1,0 +1,14 @@
+.horizontal-line {
+    border-top: 1px solid #ff5722;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .clickable {
+    cursor: pointer;
+  }
+
+
+.bold{
+  font-weight: bolder;
+}

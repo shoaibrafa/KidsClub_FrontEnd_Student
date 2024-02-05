@@ -1,0 +1,57 @@
+.card-footer {
+    justify-content: space-around;
+    text-align: center;
+    display: flex;
+    padding: 0px !important;
+}
+
+.no-border {
+    border-width: 0px;
+}
+
+.card-footer div {
+    flex-grow: 1 !important;
+    border-right: 1px solid #dbdbdb;
+    padding: 5px 0;
+    background-color: #456fa5;
+    cursor: pointer;
+}
+
+.card-footer div:hover {
+    background-color: #0a274d;
+}
+
+.card-footer div:last-child {
+    border-right: none;
+}
+
+.custom-footer-icons i {
+    font-size: 20px;
+}
+
+
+.date {
+    font-size: 12px;
+    padding-right: 5px;
+    color: brown;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Shantell Sans', cursive;
+    color: #214162;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-container img {
+    max-width: 100%;
+    max-height: 70vh;
+    width: auto;
+    height: auto;
+  }
+

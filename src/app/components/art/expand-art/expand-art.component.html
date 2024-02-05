@@ -1,0 +1,28 @@
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <div class="card no-border">
+      <div class="image-container pt-3">
+        <img [src]="current_art_image" class="card-img-top" *ngIf="image_load_successful">
+        <div class="container text-center p-5" *ngIf="!image_load_successful">
+          <img  src="../../../../assets/images/load_failed.png" class="load-failed" width="200px" >
+        </div>
+      </div>
+
+     
+      <div class="p-5" *ngIf="loading">
+        <app-spinner ></app-spinner>
+      </div>
+      <div class="card-body d-grid gap-3">
+        <h5 class="card-title text-center title">{{ current_art_title }}</h5>
+        <p class="card-text text-center p-0 mb-0">{{ current_art_desc }}</p>
+        <p class="card-text text-end p-0 mt-0 date">{{ current_art_date | date:'dd-MMMM-yyyy'}}</p>
+      </div>
+      <div class="card-footer text-light custom-footer-icons"> 
+        <div class="btn-hover"><i class="bi bi-share-fill"></i></div>
+        <div class="btn-hover"><i class="bi bi-pencil-square"></i></div>
+        <div class="btn-hover"><i class="bi bi-trash3-fill"></i></div>
+        <div class="btn-hover" (click)="previous()"><i class="bi bi-arrow-left-circle-fill"></i></div>
+        <div class="btn-hover" (click)="nextArt()"><i class="bi bi-arrow-right-circle-fill"></i></div>
+      </div>
+    </div>
+

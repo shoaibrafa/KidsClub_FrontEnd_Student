@@ -1,0 +1,34 @@
+<div class="container-fluid">
+    <div class="row bg-color" style="height: 50px;">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-lg-6 d-flex mt-2"></div>
+
+                  <div class="col-lg-6 text-end mt-2">
+                    <button class="btn btn-light" style="margin-right: 15px;" (click)="logout()">Logout</button>
+                    <a routerLink="settings" class="fas fa-thin fa-gear fa-xl" style="color: #d5e2ff; margin: 0; padding: 0;"></a>
+                  </div>
+             </div>
+          </div>
+    </div>
+    <div class="row shadow-sm" style="height:32px;">
+      <div class="col-2 m-1">
+        <h5 style="margin-left: 20px; font-weight: bold;">  {{sharedservice.component_name}}  </h5>
+      </div>
+    </div>
+    <div class="container mt-2">
+      <div class="col-10 d-flex align-items-center justify-content-end" *ngIf="sharedservice.component_name === 'Articles'">
+        <button class="btn btn-success btn-sm mt-2 " (click)="create_article()">New Article</button>
+      </div>
+      <div class="col-12 d-flex align-items-center justify-content-end btn-success" *ngIf="sharedservice.component_name === 'Arts'">
+        <button class="btn btn-light mt-0 " (click)="new_art()">New Art</button>
+      </div>
+      <div class="col-10 d-flex align-items-center justify-content-end" *ngIf="sharedservice.component_name === 'Photography'">
+        <button class="btn btn-success btn-sm mt-2 " (click)="create_article()">New Photography</button>
+      </div>
+      <div class="col-10 d-flex align-items-center justify-content-end" *ngIf="sharedservice.component_name === 'Gallery'">
+        <button class="btn btn-success btn-sm mt-2 " (click)="create_article()">Gallery</button>
+      </div>
+    </div>
+</div>

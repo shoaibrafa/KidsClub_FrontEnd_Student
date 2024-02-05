@@ -1,0 +1,52 @@
+.fixed-section {
+  position: fixed;
+  z-index: 20;
+  width: 100%;
+}
+
+.sidebar-wrapper {
+  position: relative;
+  z-index: 3;
+}
+
+.scrollable-div {
+  max-height: calc(100vh);
+  overflow: auto;
+}
+
+@media (max-width: 1400px) {
+  .scrollable-div {
+    max-height: calc(90vh);
+  }
+}
+
+@media (max-width: 1400px) {
+  .scrollable-div {
+    max-height: calc(90vh);
+  }
+}
+
+@media (max-width: 900px) {
+  .scrollable-div {
+    max-height: calc(92vh);
+  }
+}
+
+@media (max-width: 430px) {
+  .scrollable-div {
+    max-height: calc(80vh);
+  }
+}
+
+
+@media (max-width: 400px) {
+  .scrollable-div {
+    max-height: calc(64vh);
+  }
+}
+
+@media (min-width: 1401px) {
+  .scrollable-div {
+    max-height: calc(92vh);
+  }
+}

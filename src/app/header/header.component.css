@@ -1,0 +1,35 @@
+.bg-color{
+    background-color: #15283c;
+}
+
+.photo {
+    width: 177px;
+    height: 55px;
+    background-image: url('../../assets/images/logo/logo.png');
+    background-position: center;
+    background-size: cover;
+    margin-left: 15px;
+  }
+
+h5{
+    color: #214162;
+    margin-top: 1px;
+}
+
+
+.btn {
+    font-size: 10px;
+    font-weight: bold;
+    background-color: #214162;
+    color: #d5e2ff; 
+    border-radius: 8px; 
+    padding: 5px 10px;
+    border: 0;
+}
+
+a{
+    color:#d5e2ff;
+    margin-right: 20px;
+    text-decoration: none;
+}
+

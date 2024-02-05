@@ -1,0 +1,67 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.back-image {
+  background-image: url('../../assets/images/background-image.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding-bottom: 50px;
+}
+
+.logo {
+  display: flex;
+  margin-top: 5px;
+}
+
+.login-card {
+  max-width: 400px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.5;
+  color: #d5e2ff;
+  font-family: 'Shantell Sans', cursive;
+}
+
+.btn {
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #214162;
+  color: #d5e2ff;
+  border-radius: 0;
+  padding: 10px 20px;
+  border: 0;
+}
+
+a {
+  font-size: 14px; /* Adjust as needed */
+  text-decoration: none;
+  color: #214162;
+}
+
+.label {
+  font-size: 14px;
+  color: #214162;
+  font-weight: bold;
+}
+
+input {
+  height: 40px; /* Adjust as needed */
+  border-radius: 0;
+}
+
+.login-error {
+  font-size: 14px; /* Adjust as needed */
+  font-weight: bold;
+  color: #ff5722;
+  padding: 0;
+  margin: 0;
+}

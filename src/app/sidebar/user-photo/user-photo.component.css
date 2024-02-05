@@ -1,0 +1,17 @@
+.photo {
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+    margin-left: 15px;
+  }
+  
+  .name {
+    font-size: 14px;
+    font-weight: bold;
+    color: aliceblue;
+    margin-left: 10px;
+  }
+
+  .user_photo_bg{
+    background-color: #15283c;
+  }

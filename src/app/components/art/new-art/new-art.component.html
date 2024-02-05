@@ -1,0 +1,24 @@
+<div class="card border-warning card-wr-bg">
+  <div class="card-body d-grid gap-3">
+    <div class="input-group mb-3 mt-3">
+      <input type="text" class="form-control" id="title" placeholder="Title" [(ngModel)]="formData.title">
+    </div>
+    <textarea cols="5" rows="10" id="content" placeholder="Write about this masterpiece...." [(ngModel)]="formData.description"></textarea>
+    <div class="input-group mb-3">
+      <input type="file" class="form-control" id="fileInput" (change)="onFileChange($event)">
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="private" id="private" [(ngModel)]="formData.visibility">
+      <label class="form-check-label" for="private">
+        Private Content
+      </label>
+      
+    </div>
+  </div>
+  <div class="card-footer text-light custom-footer-icons d-flex justify-content-end"> 
+    <app-spinner *ngIf="loading"></app-spinner>
+    <button class="btn btn-save m-3" (click)="save()" *ngIf="show_save_btn">Save</button>
+    <button class="btn close-btn m-3" (click)="close_modal()" *ngIf="show_close_btn">Close</button>
+    
+  </div>
+</div>

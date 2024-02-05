@@ -1,0 +1,29 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-3 col-md-1 col-sm-0"></div>
+        <div class="col-lg-6 col-md-10 col-sm-12">
+
+
+            <div class="card border mt-3" *ngFor="let post of posts">
+                <div class="card-header">
+                    <div class="row">
+                        <div class="col-lg-8"><img src="https://via.placeholder.com/25"><span style="margin-left: 5px; color: #ffffff; font-weight: bold; font-size: small;">{{ post.owner_full_name }} ( {{post.category}} )</span></div>
+                        <div class="col-lg-4 pt-1"><span style="color: #ffffff; font-weight: bold; font-size: small; float:right">{{ post.create_date | date }}</span></div>
+                    </div>
+                </div>
+                <img [src]= "post.post_image"  class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{ post.post_title }}</h5>
+                    <p class="card-text" style="font-size: small;">{{ post.post_content }}</p>
+                </div>
+                <div class="card-footer">
+                    <div class="row">
+                        <div class="col-lg-4"><i class="fa-solid fa-thumbs-up fa-lg" style="color: #ffffff;"></i><span style="color: #ffffff; font-weight: bold; font-size: small;">  Like</span></div>
+                        <div class="col-lg-4"><i class="fa-solid fa-hands-clapping fa-lg" style="color: #ffffff;"></i><span style="color: #ffffff; font-weight: bold; font-size: small;"> Applause</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-1 col-sm-0"></div>
+    </div>
+</div>

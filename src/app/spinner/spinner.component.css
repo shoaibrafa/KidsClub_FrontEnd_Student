@@ -1,0 +1,36 @@
+.image-spinner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+    
+    .spinner-circle {
+      width: 60px;
+      height: 60px;
+      border-radius: 70%;
+      margin: 0 5px;
+      animation: spin 1s linear infinite;
+      border: 10px solid transparent;
+      border-top-color: transparent;
+      border-bottom-color: transparent;
+      border-left-color: transparent;
+    }
+    
+    .spinner-color1 {
+      border-left-color: #f75220;
+      border-right-color: #214162;
+      animation: spin 1s linear infinite reverse;
+    }
+    
+    p {
+      font-size: 16px;
+      font-family: 'Shantell Sans', cursive;
+    }
+    
+    
+    @keyframes spin {
+      0% { transform: rotate(360deg); }
+      100% { transform: rotate(0deg); }
+    }
+    

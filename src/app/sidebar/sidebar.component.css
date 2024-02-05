@@ -1,0 +1,59 @@
+.school_name {
+  color: #d3e1ff;
+  margin: 0px;
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.back-image {
+  background-image: url('../../assets/images/background-image.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding-bottom: 50px;
+}
+
+.school_stat {
+  font-size: 12px;
+}
+
+h6 {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.horizontal-line {
+  border-top: 1px solid #ff5722;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.sidebar {
+  /* background-color: #15283c; */
+}
+
+.sidebar .list-group-item {
+  border: none;
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0);
+  /* background-color: #15283c; */
+
+}
+
+.sidebar .list-group-item:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.sidebar .list-group-item i {
+  margin-right: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #d3e1ff;
+}
+
+a:hover {
+  color: #ff5722;
+}
